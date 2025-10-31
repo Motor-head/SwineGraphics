@@ -1,0 +1,7 @@
+<a href="https://www.flaticon.com/free-icons/gallery" title="gallery icons">Gallery icons created by Ian Anandara - Flaticon</a>
+
+<a href="https://www.flaticon.com/free-icons/warning" title="warning icons">Warning icons created by Ian Anandara - Flaticon</a>
+
+<a href="https://www.flaticon.com/free-icons/pig" title="pig icons">Pig icons created by Freepik - Flaticon</a>
+
+Using JPackgeScriptFX to create MSI/DEB: https://github.com/dlemmermann/JPackageScriptFX
