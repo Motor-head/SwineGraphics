@@ -27,13 +27,9 @@ public class DxtWorker {
 
     public static final int DXT1 = 0x31545844;
     public static final int DXT5 = 0x35545844;
-    private final int[] alpha;
-    private final int[] color;
     private final int[] texel;
 
-    public DxtWorker() {
-        alpha = new int[8];
-        color = new int[4];
+    public DxtWorker() {        
         texel = new int[16];
     }
 
@@ -128,6 +124,7 @@ public class DxtWorker {
     private void decodeAlpha(ByteBuffer buffer, int[] argb) {
 
         // Build alpha palette
+        var alpha = new int[8];
         alpha[0] = Byte.toUnsignedInt(buffer.get());
         alpha[1] = Byte.toUnsignedInt(buffer.get());
 
@@ -155,6 +152,7 @@ public class DxtWorker {
     }
 
     private void decodeDiffuse(ByteBuffer colors, ByteBuffer indices, int[] argb, int alpha) {
+        var color = new int[4];
         color[0] = (alpha << 24) | unpack565(colors.getShort());
         color[1] = (alpha << 24) | unpack565(colors.getShort());
 
